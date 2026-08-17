@@ -13,6 +13,7 @@ html {
 
 body {
   background: #eef7fb;
+  font-family: "Inter", "SF Pro Text", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
 }
 
 body::before {
@@ -54,16 +55,29 @@ body::after {
 }
 
 #site-title {
-  font-weight: 800;
-  letter-spacing: 0;
+  font-family: "Inter", "SF Pro Display", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-weight: 650;
+  letter-spacing: 0.015em;
+  line-height: 1.08;
   filter: drop-shadow(0 0 18px rgba(85, 214, 232, 0.34));
 }
 
 #site-subtitle,
 #subtitle {
-  font-weight: 500;
-  letter-spacing: 0;
-  text-shadow: 0 0 20px rgba(85, 214, 232, 0.55);
+  min-height: 1.7em;
+  font-family: "Inter", "SF Pro Text", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.42rem);
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.55;
+  text-shadow: 0 0 18px rgba(85, 214, 232, 0.42);
+}
+
+.typed-cursor {
+  margin-left: 0.12em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 0 14px rgba(85, 214, 232, 0.56);
 }
 
 #nav {
