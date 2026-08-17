@@ -80,6 +80,27 @@ body::after {
   text-shadow: 0 0 14px rgba(85, 214, 232, 0.56);
 }
 
+#subtitle.little-star-typewriter::after {
+  display: inline-block;
+  margin-left: 0.12em;
+  content: "|";
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 300;
+  text-shadow: 0 0 14px rgba(85, 214, 232, 0.56);
+  animation: little-star-caret 980ms steps(1) infinite;
+}
+
+@keyframes little-star-caret {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  49%,
+  100% {
+    opacity: 0;
+  }
+}
+
 #nav {
   background: rgba(9, 22, 38, 0.12);
   backdrop-filter: blur(10px);
