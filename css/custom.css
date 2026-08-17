@@ -22,7 +22,7 @@ body::before {
   content: "";
   background:
     linear-gradient(135deg, rgba(13, 29, 49, 0.26), rgba(86, 190, 215, 0.16)),
-    url("/img/little-star-hero.jpg") center / cover no-repeat;
+    url("/img/cover.jpg") center / cover no-repeat;
   opacity: 0.18;
 }
 
