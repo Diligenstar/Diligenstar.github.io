@@ -91,6 +91,44 @@ body::after {
   box-shadow: 0 10px 32px rgba(16, 32, 51, 0.12);
 }
 
+#nav .site-page {
+  position: relative;
+  transition: transform 180ms ease, color 180ms ease, text-shadow 180ms ease;
+}
+
+#nav .site-page::after {
+  position: absolute;
+  right: 0.35rem;
+  bottom: -0.18rem;
+  left: 0.35rem;
+  height: 2px;
+  content: "";
+  background: linear-gradient(90deg, var(--little-star-cyan), var(--little-star-gold));
+  border-radius: 999px;
+  opacity: 0;
+  transform: scaleX(0.25);
+  transform-origin: center;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+#nav .site-page:hover,
+#nav .site-page:focus-visible {
+  color: #f8d88a !important;
+  text-shadow: 0 0 16px rgba(85, 214, 232, 0.48);
+  transform: translateY(-2px);
+}
+
+#nav .site-page:hover::after,
+#nav .site-page:focus-visible::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+#nav .site-page:active {
+  color: var(--little-star-cyan) !important;
+  transform: translateY(0);
+}
+
 .layout > div:first-child:not(.recent-posts),
 #recent-posts > .recent-post-item,
 .card-widget,
