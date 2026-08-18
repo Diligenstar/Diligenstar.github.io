@@ -114,6 +114,7 @@
     var subtitleMap = {
       "/archives/": "我的来路。",
       "/categories/": "我的万分之一。",
+      "/about/": "我与我周旋久。",
       "/link/": "暂无"
     };
 
@@ -122,6 +123,8 @@
       text = subtitleMap["/archives/"];
     } else if (path.indexOf("/categories/") === 0) {
       text = subtitleMap["/categories/"];
+    } else if (path === "/about/") {
+      text = subtitleMap["/about/"];
     } else if (path === "/link/") {
       text = subtitleMap["/link/"];
     }

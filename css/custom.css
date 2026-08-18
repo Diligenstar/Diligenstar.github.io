@@ -62,13 +62,23 @@ body::after {
   filter: drop-shadow(0 0 18px rgba(85, 214, 232, 0.34));
 }
 
+#page-site-info {
+  width: min(92vw, 900px);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
 .little-star-page-subtitle {
+  display: block;
+  width: 100%;
   margin-top: 0.72rem;
   font-family: "Inter", "SF Pro Text", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
   font-size: clamp(0.96rem, 1.8vw, 1.18rem);
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.6;
+  text-align: center;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 0 18px rgba(85, 214, 232, 0.38);
 }
