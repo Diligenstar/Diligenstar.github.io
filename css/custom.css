@@ -181,6 +181,17 @@ body::after {
   padding: 3px;
   background: linear-gradient(135deg, var(--little-star-gold), var(--little-star-cyan));
   box-shadow: 0 0 28px rgba(85, 214, 232, 0.36);
+  transition: box-shadow 220ms ease, filter 220ms ease;
+}
+
+.avatar-img img:hover {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+  filter: saturate(1.06) brightness(1.03);
+  box-shadow: 0 0 32px rgba(85, 214, 232, 0.44);
 }
 
 .card-info .author-info-name {

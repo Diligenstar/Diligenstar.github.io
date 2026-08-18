@@ -2,8 +2,8 @@
   var subtitleLines = [
     "Still becoming.",
     "Observe. Understand. Build.",
-    "A river of ideas, experiences, and choices.",
-    "在每一次选择中，成为自己"
+    "A river of ideas, experiences and choices.",
+    "在每一次选择中，成为自己。"
   ];
 
   var subtitleTimer = null;
