@@ -199,6 +199,10 @@ body::after {
   color: var(--little-star-deep);
 }
 
+.site-data > a:nth-child(2) {
+  display: none;
+}
+
 #card-info-btn {
   background: linear-gradient(135deg, #17375a, #1d8fbf, #f0b757) !important;
   box-shadow: 0 10px 24px rgba(29, 143, 191, 0.24);
