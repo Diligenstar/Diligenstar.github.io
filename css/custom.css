@@ -102,14 +102,14 @@ body::after {
 }
 
 #nav {
-  background: rgba(9, 22, 38, 0.12);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(9, 22, 38, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 #nav.show {
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 10px 32px rgba(16, 32, 51, 0.12);
+  background: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 10px 32px rgba(16, 32, 51, 0.08);
 }
 
 #nav .site-page {
@@ -182,8 +182,19 @@ body::after {
   background: linear-gradient(135deg, var(--little-star-gold), var(--little-star-cyan));
   box-shadow: 0 0 28px rgba(85, 214, 232, 0.36);
   transition: box-shadow 220ms ease, filter 220ms ease;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
 }
 
+#aside-content .avatar-img img:hover,
+#sidebar .avatar-img img:hover,
 .avatar-img img:hover {
   -webkit-transform: none !important;
   -moz-transform: none !important;
