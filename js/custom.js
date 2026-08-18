@@ -106,9 +106,44 @@
     document.body.appendChild(layer);
   }
 
+  function initPageSubtitle() {
+    var pageTitle = document.querySelector("#page-site-info #site-title");
+    if (!pageTitle) return;
+
+    var path = window.location.pathname.replace(/\/+$/, "/");
+    var subtitleMap = {
+      "/archives/": "我的来路。",
+      "/categories/": "我的万分之一。",
+      "/link/": "暂无"
+    };
+
+    var text = "";
+    if (path.indexOf("/archives/") === 0) {
+      text = subtitleMap["/archives/"];
+    } else if (path.indexOf("/categories/") === 0) {
+      text = subtitleMap["/categories/"];
+    } else if (path === "/link/") {
+      text = subtitleMap["/link/"];
+    }
+
+    var current = document.querySelector("#page-site-info .little-star-page-subtitle");
+    if (!text) {
+      if (current) current.remove();
+      return;
+    }
+
+    if (!current) {
+      current = document.createElement("div");
+      current.className = "little-star-page-subtitle";
+      pageTitle.insertAdjacentElement("afterend", current);
+    }
+    current.textContent = text;
+  }
+
   function boot() {
     initSubtitleTypewriter();
     initStarLayer();
+    initPageSubtitle();
   }
 
   if (document.readyState === "loading") {
